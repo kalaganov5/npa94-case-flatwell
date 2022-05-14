@@ -1,0 +1,28 @@
+.header {
+  background-color: @color-orange;
+  height: 100vh;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: @font-mobile-h1;
+}
+
+@media (min-width: @width-tablet) {
+  .header__title {
+    font-size: @font-tablet-h1;
+  }
+}
+
+@media (min-width: @width-desktop) {
+  .header__title {
+    font-size: @font-desktop-h1;
+  }
+}
